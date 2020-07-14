@@ -9,10 +9,6 @@
       "url": "https://wpackagist.org"
     },
     {
-      "type": "vcs",
-      "url": "https://github.com/pantheon-systems/wordpress-composer"
-    },
-    {
       "type": "path",
       "url": "upstream-config"
     }
