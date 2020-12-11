@@ -12,6 +12,7 @@ web/*
 !web/index.php
 !web/wp-cli.yml
 !web/wp-config.php
+!web/wp-config-pantheon.php
 !web/wp-content/
 web/wp-content/*
 !web/wp-content/mu-plugins/
