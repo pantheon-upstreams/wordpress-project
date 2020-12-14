@@ -98,3 +98,10 @@ if (getenv('WP_ENVIRONMENT_TYPE') === false) {
             break;
     }
 }
+
+/**
+ * Force SSL
+ */
+if ( ! defined('FORCE_SSL_ADMIN') ) {
+    define( 'FORCE_SSL_ADMIN', true );
+}
