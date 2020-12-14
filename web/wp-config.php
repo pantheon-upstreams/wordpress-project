@@ -1,15 +1,5 @@
 <?php
 /**
- * Set root path
- */
-$rootPath = realpath( __DIR__ . '/..' );
-
-/**
- * Include the Composer autoload
- */
-require_once( $rootPath . '/vendor/autoload.php' );
-
-/**
  * Pantheon platform settings. Everything you need should already be set.
  */
 if (file_exists(dirname(__FILE__) . '/wp-config-pantheon.php') && isset($_ENV['PANTHEON_ENVIRONMENT'])) {
