@@ -81,14 +81,11 @@ define('WP_TEMP_DIR', $_SERVER['HOME'] .'/tmp');
 // FS writes aren't permitted in test or live, so we should let WordPress know to
 // disable relevant UI.
 if (in_array($_ENV['PANTHEON_ENVIRONMENT'], array( 'test', 'live' ) ) ) {
-    $constants = [
-        'DISALLOW_FILE_MODS',
-        'DISALLOW_FILE_EDIT',
-    ];
-    foreach ($constant as $constants) {
-        if ( ! defined($constant) ) {
-            define( $constant, true );
-        }
+    if ( ! defined('DISALLOW_FILE_MODS') ) {
+        define( 'DISALLOW_FILE_MODS', true );
+    }
+    if ( ! defined('DISALLOW_FILE_EDIT') ) {
+        define( 'DISALLOW_FILE_EDIT', true );
     }	
 }
 
