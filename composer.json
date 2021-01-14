@@ -1,5 +1,5 @@
 {
-  "name": "pantheon-upstreams/wordpresss-project",
+  "name": "pantheon-upstreams/wordpress-project",
   "description": "Install Wordpress with Composer on Pantheon",
   "type": "project",
   "keywords": [],
