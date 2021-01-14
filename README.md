@@ -1,4 +1,4 @@
-# Composer-enabled Wordpress Upstream template
+# Composer-enabled WordPress Upstream template
 
 This is Pantheon's recommended starting point for forking new upstreams that work with the Platform's integrated
 Composer build process. Replace this with a description of your site. See `upstream-config/README.md` for advice
