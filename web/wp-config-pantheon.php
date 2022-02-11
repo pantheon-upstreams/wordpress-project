@@ -77,6 +77,8 @@ if ( isset( $_SERVER['HTTP_HOST'] ) ) {
 error_reporting(E_ALL ^ E_DEPRECATED);
 /** Define appropriate location for default tmp directory on Pantheon */
 define('WP_TEMP_DIR', $_SERVER['HOME'] .'/tmp');
+/** Disable wp-cron.php from running on every page load and rely on Pantheon to run cron via wp-cli */
+define('DISABLE_WP_CRON', true);
 
 // FS writes aren't permitted in test or live, so we should let WordPress know to
 // disable relevant UI.
